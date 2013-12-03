@@ -8,6 +8,8 @@ To test this web app you need to install Flask, Flask-wtf module, twitter and (e
 A lot of work could be done. 
 
 To install Flask/twitter
-sudo pip install flask
-sudo pip install twitter
+
+- sudo pip install flask
+
+- sudo pip install twitter
 
