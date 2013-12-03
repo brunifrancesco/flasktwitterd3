@@ -1,0 +1,27 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='bootstrap/css/bootstrap.css') }}"/>
+	<script src="{{url_for('static',filename='jquery.js')}}"></script>
+</head>
+<body>
+<div style="text-align:center; margin-top:10%">
+<h1>
+	D3.js + Flask example
+</h1>
+<h2>
+	Provide your Twitter username and submit the request. <br /> 
+	Once your request will be processed, <br />
+	you'll get your Twitter friendship graph	
+</h2>
+<form style="margin-top:5%" id="form" action="" method="post" name="login">
+    {{form.hidden_tag()}}
+    <p>
+        Please enter your Twitter user name<br>
+        {{form.screen_name(size=80)}}<br>
+    </p>
+    <p><button id="button" class="btn-lg" style="background-color: green">Submit</button></p>
+</form>
+
+</div>
+</body>
+</html>
